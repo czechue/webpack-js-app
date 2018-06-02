@@ -22,7 +22,8 @@ module.exports = {
 					process.env.NODE_ENV !== 'production'
 						? 'style-loader'
 						: MiniCssExtractPlugin.loader,
-					'css-loader',
+          'css-loader',
+          'postcss-loader',
 					'sass-loader'
 				]
 			},
@@ -58,5 +59,6 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
-  }
+  },
+  mode: "production"
 };
