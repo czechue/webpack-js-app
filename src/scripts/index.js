@@ -4,27 +4,32 @@ import '../styles/style.scss';
 import printMe from './print.js';
 
 function component() {
-  var element = document.createElement('div');
-  var btn = document.createElement('button');
+	var element = document.createElement('div');
+	var btn = document.createElement('button');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+	// Lodash, now imported by this script
+	element.innerHTML = _.join([ 'Hello', 'webpack' ], ' ');
+	element.classList.add('hello');
 
+	// Add the image to our existing div.
+	// const myImg = new Image();
+	// myImg.src = stockImage;
+	// element.appendChild(myImg);
 
+	// Output management
+	btn.innerHTML = 'Click me and check the console!';
+	btn.onclick = printMe;
+	element.appendChild(btn);
 
-  // Add the image to our existing div.
-  // const myImg = new Image();
-  // myImg.src = stockImage;
-  // element.appendChild(myImg);
-
-
-  // Output management
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-  element.appendChild(btn);
-
-  return element;
+	return element;
 }
 
 document.body.appendChild(component());
+
+// Enabling Hot Module Replacement
+if (module.hot) {
+	module.hot.accept('./print.js', function() {
+		console.log('Accepting the updated printMe module! ');
+		printMe();
+	});
+}

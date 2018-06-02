@@ -2,19 +2,16 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-    app: './src/scripts/index.js',
-    print: './src/scripts/print.js'
+    app: './src/scripts/index.js'
   },
-	output: {
-    filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist')
-	},
   devtool: 'inline-source-map', // any "source-map"-like devtool is possible
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true
   },
 	module: {
 		rules: [
@@ -40,6 +37,9 @@ module.exports = {
 		]
 	},
 	plugins: [
+    // In general it's good practice to clean the /dist folder before each build, 
+    // so that only used files will be generated
+    new CleanWebpackPlugin(['dist']),
 		new MiniCssExtractPlugin({
 			// Options similar to the same options in webpackOptions.output
 			// both options are optional
@@ -51,8 +51,12 @@ module.exports = {
       title: 'Output Management',
       template: './src/templates/index.html'
     }),
-     // In general it's good practice to clean the /dist folder before each build, 
-     // so that only used files will be generated
-    new CleanWebpackPlugin(['dist']),
-	]
+    // Enabling Hot Module Replacement
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
 };
