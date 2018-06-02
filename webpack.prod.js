@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const common = require('./webpack.common.js');
 const merge = require('webpack-merge');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(common, {
@@ -20,6 +20,6 @@ module.exports = merge(common, {
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify('production')
 		})
-  ],
-  mode: 'production'
+	],
+	mode: 'production'
 });

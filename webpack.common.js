@@ -7,12 +7,18 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
 	entry: {
-		app: './src/scripts/index.js',
-		another: './src/scripts/another-module.js'
+		app: './src/scripts/index.js'
+		// another: './src/scripts/modules/another-module.js' // this is how you add extra modules
 	},
-
 	module: {
 		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader'
+				}
+			},
 			{
 				test: /\.s?[ac]ss$/,
 				use: [
@@ -53,11 +59,11 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin()
 	],
 	output: {
-		filename: '[name].bundle.js',
+		filename: '[name].[hash].js',
 		path: path.resolve(__dirname, 'dist')
 	},
 	optimization: {
-    // prevent to duplicate dependencies
+		// prevent to duplicate dependencies
 		splitChunks: {
 			chunks: 'all'
 		}

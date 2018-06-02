@@ -1,3 +1,7 @@
 .hello {
   font-size: 25px;
+
+  &--test {
+    text-decoration: underline;
+  }
 }
