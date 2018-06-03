@@ -2,7 +2,9 @@
 
 - `npm install`
 - `npm start` - developing
+- `npm test` - runs tests
 - `npm run build` - bundling to prod
+- app runs on `http://localhost:8080`
 
 ### Includes:
 - Hot reloading
@@ -16,6 +18,7 @@
 
 ### TODO
 - [ ] improve documentation,
+- [ ] clean src folder and add adnotations,
 - [ ] add demo app (todo / hacker news clone etc.),
 - [ ] add comments to config files,
 - [ ] work on build performance, https://webpack.js.org/guides/build-performance/ ,
@@ -23,6 +26,9 @@
 - [ ] add PWA config ?,
 - [ ] add TypeScript starter version,
 - [ ] add testing envi (Jest, Jasmine, Mocha, other...?),
+  - [x] analizing (Jest is the winner)
+  - [x] add Jest with babel config
+  - [ ] add integration with puppeteer
 - [ ] improve html build https://github.com/jantimon/html-webpack-plugin ,
 - [ ] changing html in template doesn't hot refresh page (I used some temporary fix but not sure if it's bugless) https://github.com/webpack/webpack-dev-server/issues/1271 ,
 - [ ] check if something interesting can be added from https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1
