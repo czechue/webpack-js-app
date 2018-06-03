@@ -18,7 +18,7 @@ module.exports = {
 				use: {
 					loader: 'babel-loader'
 				}
-			},
+      },
 			{
 				test: /\.s?[ac]ss$/,
 				use: [
@@ -59,7 +59,7 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin()
 	],
 	output: {
-		filename: '[name].[hash].js',
+    filename: devMode ? '[name].js' : '[name].[hash].js',
 		path: path.resolve(__dirname, 'dist')
 	},
 	optimization: {

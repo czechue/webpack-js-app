@@ -20,7 +20,7 @@ function component() {
 	// Tree Shaking
 	element.innerHTML = [
 		'Hello webpack!',
-		'5 cubed is equal to ' + cube(1235)
+		'5 cubed is equal to ' + cube(2)
 	].join('\n\n');
 
 	// Add the image to our existing div.
