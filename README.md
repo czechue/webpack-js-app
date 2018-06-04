@@ -16,6 +16,13 @@
 - babel-loader
 - jpg / fonts bundling
 
+### Links
+#### Testing
+- Puppeteer https://github.com/GoogleChrome/puppeteer
+- Jest-Pupeteer https://github.com/smooth-code/jest-puppeteer
+- Pixelmatch https://github.com/mapbox/pixelmatch
+- 
+
 ### TODO
 - [ ] improve documentation,
 - [ ] clean src folder and add adnotations,
