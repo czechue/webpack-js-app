@@ -25,8 +25,6 @@ function component() {
 		'5 cubed is equal to ' + cube(2)
 	].join('\n\n');
 
-	
-
 	// Add the image to our existing div.
 	const myImg = new Image();
 	myImg.src = stockImage;
@@ -52,8 +50,8 @@ function formComponent() {
 			</form>
 		</div>
 	</div>
-	`
-	
+	`;
+
 	navBarElem.insertAdjacentHTML('afterbegin', formView);
 }
 
@@ -63,35 +61,38 @@ function onSubmit() {
 		firstName: '',
 		lastName: '',
 		email: ''
-	}
+	};
 
 	const setUserData = function() {
 		userData.firstName = document.getElementById('firstName').value;
 		userData.lastName = document.getElementById('lastName').value;
 		userData.email = document.getElementById('email').value;
+	};
+
+	const setCookie = function () {
+		document.cookie = `firstName=${userData.firstName}`
 	}
 
-	const displayNewPanel = function () {
+	const displayNewPanel = function() {
 		const panelView = `
 		<div data-testid="success" class="success">
 			<p data-testid="success-firstName">First name: ${userData.firstName}</p>
 			<p data-testid="success-lastName">Last name: ${userData.lastName}</p>
 			<p data-testid="success-email">Email: ${userData.email}</p>
-		</div>`
-		navBarElem.insertAdjacentHTML('afterbegin', panelView)
-	}
+		</div>`;
+		navBarElem.insertAdjacentHTML('afterbegin', panelView);
+	};
 
 	button.addEventListener('click', () => {
-		// const promise = new Promise((resolve => {
-		// 	resolve(setUserData())
-		// }))
-		// promise.then(() => displayNewPanel() )
-		setUserData()
-		displayNewPanel()
-	})
+		// CONDITION WHEN JWT TOKEN IS REQUIRED TO SUBMIT THE FORM
+		// if (document.cookie.includes('JWT')) {
+			setUserData();
+			setCookie()
+			displayNewPanel();
+		// }
+	});
 }
 
-
 document.body.appendChild(component());
-formComponent()
-onSubmit()
+formComponent();
+onSubmit();
