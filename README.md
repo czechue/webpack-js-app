@@ -35,7 +35,7 @@
 - [ ] add testing envi (Jest, Jasmine, Mocha, other...?),
   - [x] analizing (Jest is the winner)
   - [x] add Jest with babel config
-  - [ ] add integration with puppeteer
+  - [x] add integration with puppeteer
 - [ ] improve html build https://github.com/jantimon/html-webpack-plugin ,
 - [ ] changing html in template doesn't hot refresh page (I used some temporary fix but not sure if it's bugless) https://github.com/webpack/webpack-dev-server/issues/1271 ,
 - [ ] check if something interesting can be added from https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1

@@ -6,9 +6,9 @@ import { cube } from './modules/math';
 
 const navBarElem = document.querySelector('.navbar');
 
-if (process.env.NODE_ENV !== 'production') {
-	console.log('Looks like we are in development mode!');
-}
+// if (process.env.NODE_ENV !== 'production') {
+// 	console.log('Looks like we are in development mode!');
+// }
 
 function component() {
 	var element = document.createElement('div');
@@ -54,6 +54,20 @@ function formComponent() {
 
 	navBarElem.insertAdjacentHTML('afterbegin', formView);
 }
+
+let state = {
+	complete: true,
+	firstName: '',
+	starWars: {}
+}
+
+// document.addEventListener('DOMContentLoaded', () => {
+// 	fetch('https://swapi.co/api/planets/1/')
+// 	.then(res => res.json())
+// 	.then((data) => state.starWars = data)
+// 	.then(() => navBarElem.insertAdjacentHTML('afterbegin', `<h3 data-testid="starWars">${state.starWars.url ? 'Recived StarWars data!' : 'Doesnt work'}</h3>`))
+// })
+	
 
 function onSubmit() {
 	const button = document.getElementById('login-button');
