@@ -1,5 +1,7 @@
-import DOM from '../utils/dom';
+import '../../styles/main.scss';
 
-export default function view() {
-
+export default class View {
+  constructor(template) {
+    this.template = template;
+  }
 }
