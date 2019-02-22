@@ -1,12 +1,12 @@
-## Webpack 4 (4.10.2v) Vanilla Javascript Starter
+## Webpack 4 (4.23.0) Vanilla Javascript Starter Pack
 
 - `npm install`
-- `npm start` - developing
+- `npm start` - developing on `http://localhost:8080`
 - `npm test` - runs tests
 - `npm run build` - bundling to prod
-- app runs on `http://localhost:8080`
 
 ### Includes:
+
 - Hot reloading
 - Dev / Prod separation builds
 - Some build optimalizations (work still in progress)
@@ -17,13 +17,16 @@
 - jpg / fonts bundling
 
 ### Links
+
 #### Testing
+
 - Puppeteer https://github.com/GoogleChrome/puppeteer
 - Jest-Pupeteer https://github.com/smooth-code/jest-puppeteer
 - Pixelmatch https://github.com/mapbox/pixelmatch
-- 
 
 ### TODO
+
+- [ ] make the api looks like https://github.com/cristianbote/hnpwa-vanilla
 - [ ] improve documentation,
 - [ ] clean src folder and add adnotations,
 - [ ] add demo app (todo / hacker news clone etc.),
