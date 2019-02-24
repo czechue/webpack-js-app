@@ -8,10 +8,13 @@
     "example": "examples",
     "test": "tests"
   },
+  "bin": {
+    "wjs": "./dist/index.js"
+  },
   "scripts": {
     "start-ts": "ts-node src/index.ts",
     "start-ts:watch": "nodemon --watch src --exec ts-node src/index.ts",
-    "build": "tsc",
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r templates dist",
     "start": "node dist/index.js"
   },
   "repository": {
@@ -28,7 +31,8 @@
     "@types/inquirer": "0.0.43",
     "@types/node": "^11.9.5",
     "nodemon": "^1.18.10",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "shx": "^0.3.2"
   },
   "dependencies": {
     "ts-node": "^8.0.2",
