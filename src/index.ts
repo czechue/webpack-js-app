@@ -20,9 +20,32 @@ const QUESTIONS = [
         message: 'Project name:'
     }];
 
-console.log(CHOICES)
+export interface CliOptions {
+    projectName: string
+    templateName: string
+    templatePath: string
+    targetPath: string
+}
+
+export interface Answer {
+    name: string,
+    template: string
+}
+
+
+const CURR_DIR = process.cwd();
 
 inquirer.prompt(QUESTIONS)
-    .then(answers => {
-        console.log(answers);
+    .then((answers: inquirer.Answers) => {
+        const projectChoice = answers['template'];
+        const projectName = answers['name'];
+        const templatePath = path.join(__dirname, '../templates', projectChoice);
+        const targetPath = path.join(CURR_DIR, projectName)
+        const options: CliOptions = {
+            projectName,
+            templateName: projectChoice,
+            templatePath,
+            targetPath
+        }
+        console.log(options);
     });

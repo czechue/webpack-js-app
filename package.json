@@ -27,7 +27,8 @@
   "devDependencies": {
     "@types/inquirer": "0.0.43",
     "@types/node": "^11.9.5",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
   },
   "dependencies": {
     "ts-node": "^8.0.2",
