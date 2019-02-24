@@ -71,6 +71,10 @@ postcss.config.js
 - Pixelmatch https://github.com/mapbox/pixelmatch
 
 ### Todo
-- [ ] Publish package on NPM
-- [ ] 
+- [ ] Add Travis CI
+- [ ] Transform template files using template engine
+- [ ] Add ability to do a post processing (optional)
+
+- [ ] (Optional) Add ability to specify options from the command line 
+
 
