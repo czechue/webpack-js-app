@@ -69,3 +69,8 @@ postcss.config.js
 - Puppeteer https://github.com/GoogleChrome/puppeteer
 - Jest-Pupeteer https://github.com/smooth-code/jest-puppeteer
 - Pixelmatch https://github.com/mapbox/pixelmatch
+
+### Todo
+- [ ] Publish package on NPM
+- [ ] 
+
