@@ -4,7 +4,7 @@ Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikac
 
 Idealny do tworzenia prostych stron oraz aplikacji na początku swojej przygody z webdev.
 Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących, może być śmiało wykorzystywane przez bardziej doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację webpacka. 
-Można doszukać się analogii do reactowego CRA.
+W projekcie można doszukać się analogii do reactowego CRA.
 
 ## Boilerplate Generator
 ### v2.0-alpha.1:
@@ -12,20 +12,23 @@ Można doszukać się analogii do reactowego CRA.
 - instalacja poprzez pakiet npm: `npm i webpack-js-starter`
 - webpack-js-starter dodaje wpisy w package.json:
 ```bash
+"start": "webpack-dev-server --config webpack.dev.js",
+"develop": "NODE_ENV=develop",
+"build": "webpack --config webpack.prod.js"
 "test": "jest",
 "debug": "NODE_ENV=debug npm test",
-"develop": "NODE_ENV=develop",
-"start": "webpack-dev-server --config webpack.dev.js",
-"build": "webpack --config webpack.prod.js"
 ```
-- cały config webpacka jest ukryty dla uytkownika
-- webpack-js-starter konfiguruje również pliki:
+
+- webpack-js-starter konfiguruje dla użtkownika:
 ```bash
-.babelrc
-.prettierrc
-postcss.config.js
+webpack
+babel
+prettier
+eslint
+postcss
 ```
-- webpack-js-starter tworzy również katalogi wraz z przykładowymi plikami:
+
+- webpack-js-starter tworzy również przykładową strukturę katalogów wraz z plikami:
 ```bash
 |  src
 |    | index.html
@@ -41,8 +44,6 @@ postcss.config.js
 | tests
 |    | example.test.js
 ```
-- stworzenie przyjaznej dokumentacji
-- dodanie przykładowych projektów w folderze `examples'
 
 
 ### Jak korzystać:
@@ -71,6 +72,10 @@ postcss.config.js
 - Pixelmatch https://github.com/mapbox/pixelmatch
 
 ### Todo
-- [ ] Publish package on NPM
-- [ ] 
-
+- [ ] Add Travis CI
+- [ ] Transform template files using template engine
+- [ ] Add ability to do a post processing (optional)
+- [ ] (Optional) Add ability to specify options from the command line 
+- [ ] stworzenie przyjaznej dokumentacji
+- [ ] dodanie przykładowych projektów w folderze `examples'
+- [ ] dodać osobne readme do templatek
