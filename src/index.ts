@@ -20,6 +20,7 @@ const QUESTIONS = [
     message: 'Project name:',
   },
 ];
+
 export interface Answer {
   name: string;
   template: string;
