@@ -1,5 +1,5 @@
 {
-	"name": "webpack-boilerplate-2019",
+	"name": "<%= projectName %>",
 	"sideEffects": [
 		"*.scss"
 	],

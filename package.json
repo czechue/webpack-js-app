@@ -35,8 +35,10 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
-    "ts-node": "^8.0.2",
+    "@types/ejs": "^2.6.3",
+    "ejs": "^2.6.1",
     "inquirer": "^6.2.2",
+    "ts-node": "^8.0.2",
     "typescript": "^3.3.3333"
   },
   "prettier": {
