@@ -78,4 +78,4 @@ postcss
 - [ ] (Optional) Add ability to specify options from the command line 
 - [ ] stworzenie przyjaznej dokumentacji
 - [ ] dodanie przykładowych projektów w folderze `examples'
-
+- [ ] dodać osobne readme do templatek
