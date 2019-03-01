@@ -56,7 +56,7 @@ inquirer.prompt(QUESTIONS).then((answers: inquirer.Answers) => {
 
 const createProject = (projectPath: string) => {
 	if (fs.existsSync(projectPath)) {
-		console.war(chalk.red(`Folder ${projectPath} exists. Delete or use another name.`));
+		console.warn(chalk.red(`Folder ${projectPath} exists. Delete or use another name.`));
 		return false;
 	}
 	fs.mkdirSync(projectPath);
