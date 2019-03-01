@@ -20,17 +20,16 @@ const QUESTIONS = [
 		message: 'Project name:'
 	}
 ];
+export interface Answer {
+	name: string;
+	template: string;
+}
 
 export interface CliOptions {
 	projectName: string;
 	templateName: string;
 	templatePath: string;
 	targetPath: string;
-}
-
-export interface Answer {
-	name: string;
-	template: string;
 }
 
 const CURR_DIR = process.cwd();
