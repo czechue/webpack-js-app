@@ -16,6 +16,7 @@ const QUESTIONS = [
 	},
 	{
 		name: 'name',
+
 		type: 'input',
 		message: 'Project name:'
 	}
