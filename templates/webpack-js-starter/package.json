@@ -52,11 +52,5 @@
     "regenerator-runtime": "^0.11.1",
     "webpack": "^4.29.5",
     "webpack-merge": "^4.2.1"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
   }
 }

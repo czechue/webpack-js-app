@@ -61,13 +61,5 @@
     "ejs": "^2.6.1",
     "inquirer": "^6.2.2",
     "typescript": "^3.3.3333"
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "tabWidth": 2,
-    "printWidth": 100,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true
   }
 }

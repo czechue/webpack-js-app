@@ -1,3 +1,3 @@
-import { arrayTraversing } from './examples/ex1';
+import arrayTraversing from './examples/ex1';
 
-arrayTraversing();
+arrayTraversing([1, 2, 3]);
