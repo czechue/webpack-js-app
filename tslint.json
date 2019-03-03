@@ -1,0 +1,11 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "no-console": false
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts", "dist/**/*.ts", "dist/templates", "templates", "examples"]
+  }
+}

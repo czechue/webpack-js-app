@@ -1,0 +1,11 @@
+{
+  "editor.tabSize": 2,
+  "prettier.useTabs": false,
+  "prettier.printWidth": 100,
+  "prettier.bracketSpacing": false,
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 2,
+  "prettier.requireConfig": true,
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true
+}
