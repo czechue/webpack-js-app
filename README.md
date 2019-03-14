@@ -7,17 +7,10 @@ Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących
 W projekcie można doszukać się analogii do reactowego CRA.
 
 ## Boilerplate Generator
-### v2.0-alpha.1:
+### v2.0
 #### Zmiany:
 - instalacja poprzez pakiet npm: `npm i webpack-js-starter`
-- webpack-js-starter dodaje wpisy w package.json:
-```bash
-"start": "webpack-dev-server --config webpack.dev.js",
-"develop": "NODE_ENV=develop",
-"build": "webpack --config webpack.prod.js"
-"test": "jest",
-"debug": "NODE_ENV=debug npm test",
-```
+
 
 - webpack-js-starter konfiguruje dla użtkownika:
 ```bash
@@ -30,19 +23,19 @@ postcss
 
 - webpack-js-starter tworzy również przykładową strukturę katalogów wraz z plikami:
 ```bash
-|  src
-|    | index.html
-|    | scripts
-|    |    | index.js
+|-- src
+|    |-- index.html
+|    |-- scripts
+|    |    |-- index.js
 |    |    
-|    | styles
-|    |    | main.scss
-|    |    | base
-|    |    |     | _base.scss
-|    |    |     | _typography.scss
+|    |-- styles
+|    |    |-- main.scss
+|    |    |-- base
+|    |    |     |-- _base.scss
+|    |    |     |-- _typography.scss
 |   
-| tests
-|    | example.test.js
+|-- tests
+|    |-- example.test.js
 ```
 
 
