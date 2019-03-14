@@ -4,6 +4,9 @@ const app = document.querySelector('#app');
 
 app.innerHTML = 'Test Name 2';
 app.classList.add('normal');
-app.insertAdjacentHTML('afterbegin', `
+app.insertAdjacentHTML(
+  'afterbegin',
+  `
   <p class="heading--lg">Add some testing text</p>
-`)
+`,
+);

@@ -64,7 +64,7 @@ const config = {
   plugins: [
     // In general it's good practice to clean the /dist folder before each build,
     // so that only used files will be generated
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
