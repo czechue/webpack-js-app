@@ -6,19 +6,18 @@ const webpack = require('webpack');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
-module.exports = {
-  entry: {
-    app: './src/scripts/index.js',
-    // another: '.src/path-to-another-module' // this is how you add extra modules
+const config = {
+  entry: './src/scripts/index.js',
+  output: {
+    path: path.resolve(__dirname, '../dist'),
+    filename: devMode ? '[name].js' : '[name].[hash].js',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
+        use: 'babel-loader',
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
       },
       {
         test: /\.s?[ac]ss$/,
@@ -26,8 +25,30 @@ module.exports = {
           // fallback to style-loader in development
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.resolve(__dirname, ''),
+              },
+            },
+          },
           'sass-loader',
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: 'file-loader',
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              mimetype: 'image/png',
+            },
+          },
         ],
       },
       {
@@ -43,7 +64,7 @@ module.exports = {
   plugins: [
     // In general it's good practice to clean the /dist folder before each build,
     // so that only used files will be generated
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
@@ -59,14 +80,18 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
-  output: {
-    filename: devMode ? '[name].js' : '[name].[hash].js',
-    path: path.resolve(__dirname, '../dist'),
-  },
   optimization: {
-    // prevent to duplicate dependencies
+    runtimeChunk: 'single',
     splitChunks: {
-      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          test: /[\\\/]node_modules[\\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
     },
   },
 };
+
+module.exports = config;

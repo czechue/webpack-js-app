@@ -1,3 +1,12 @@
-import arrayTraversing from './examples/ex1';
+import styles from '../styles/main.scss';
+console.log(styles);
+const app = document.querySelector('#app');
 
-arrayTraversing([1, 2, 3]);
+app.innerHTML = 'Test Name 2';
+app.classList.add('normal');
+app.insertAdjacentHTML(
+  'afterbegin',
+  `
+  <p class="heading--lg">Add some testing text</p>
+`,
+);
