@@ -37,10 +37,6 @@ const config = {
         ],
       },
       {
-        test: /\.svg$/,
-        use: 'file-loader',
-      },
-      {
         test: /\.png$/,
         use: [
           {
@@ -53,7 +49,14 @@ const config = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
-        use: ['file-loader'],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/[name]-[hash].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
