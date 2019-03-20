@@ -1,3 +1,5 @@
+# TEMPORARY BROKEN
+
 ## Webpack 4 (4.29.5) Vanilla Javascript Starter Pack
 
 Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji ze skonfigurowanymi środowiskami `dev, test, pros`.
