@@ -6,6 +6,12 @@
     "no-console": false
   },
   "linterOptions": {
-    "exclude": ["node_modules/**/*.ts", "dist/**/*.ts", "dist/templates", "templates", "examples"]
+    "exclude": [
+      "node_modules/**/*.ts",
+      "dist/**/*.ts",
+      "dist/templates",
+      "templates/**",
+      "examples/**"
+    ]
   }
 }

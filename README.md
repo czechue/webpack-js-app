@@ -1,16 +1,13 @@
 ## Webpack 4 (4.29.5) Vanilla Javascript Starter Pack
 
-Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji z już skonfigurowanym środowiskiem `dev, test, pros`.
+Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji ze skonfigurowanymi środowiskami `dev, test, pros`.
 
 Idealny do tworzenia prostych stron oraz aplikacji na początku swojej przygody z webdev.
 Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących, może być śmiało wykorzystywane przez bardziej doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację webpacka. 
 W projekcie można doszukać się analogii do reactowego CRA.
 
 ## Boilerplate Generator
-### v2.0
-#### Zmiany:
 - instalacja poprzez pakiet npm: `npm i webpack-js-starter`
-
 
 - webpack-js-starter konfiguruje dla użtkownika:
 ```bash
@@ -20,6 +17,18 @@ prettier
 eslint
 postcss
 ```
+
+#### Dostępne opcje konfiguracyjne startera:
+##### A. webpack-onepage-js-starter
+* idealny do tworzenia stron typu one-page,
+* kod (strukturę) strony można w całości pisać w pliku index.html,
+* zapewnia prawidłowy build i możliwość podłączania obrazków w prosty sposób: `<img src="/assets/image.png"`
+
+##### B. webpack-app-js-starter
+* idealny do tworzenia aplikacji SPA,
+* kod strony pisany w JS, wstrzykiwany w templatkę html,
+* skonfigurowane środowisko testowe,
+* bardziej skupiony na web performance,
 
 - webpack-js-starter tworzy również przykładową strukturę katalogów wraz z plikami:
 ```bash
