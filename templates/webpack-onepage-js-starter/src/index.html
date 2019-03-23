@@ -6,7 +6,7 @@
   </head>
   <body>
     <div>from html just</div>
-    <img src="./my-image.svg" alt="">
+    <img src="${require('./my-image.svg')}" alt="">
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>
