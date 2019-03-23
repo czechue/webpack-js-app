@@ -2,13 +2,14 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
     main: ['./src/index.js', './src/style.scss'],
   },
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -50,5 +51,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
+    new webpack.HotModuleReplacementPlugin()
   ],
 };
