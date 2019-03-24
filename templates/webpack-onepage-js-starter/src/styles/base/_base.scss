@@ -18,3 +18,21 @@ html {
 body {
   background-color: $color-grey-bg;
 }
+
+@font-face {
+  font-family: 'Karla';
+  // these assets are relative to main.scss
+  src: url('../assets/fonts/karla.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  color: green;
+  font-family: 'Karla', sans-serif;
+  // these assets are relative to main.scss
+  background: url('../assets/images/my-image.svg');
+  &--man {
+    font-size: x-large;
+  }
+}

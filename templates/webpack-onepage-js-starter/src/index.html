@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Getting Started</title>
+    <title>Webpack One Page JS starter</title>
+
+    <!--webpack inject styles / don't modify-->
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
   </head>
+
   <body>
-    <div>from html just one</div>
-    <img src="${require('./my-image.svg')}" alt="">
+    <main class="normal">
+      <div>from html just one 2</div>
+      <img src="${require('./assets/images/my-image.svg')}" alt="" />
+    </main>
+
+    <!--webpack inject script file / don't modify-->
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

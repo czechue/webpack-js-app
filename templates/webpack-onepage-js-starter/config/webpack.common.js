@@ -6,7 +6,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    main: ['./src/index.js', './src/style.scss'],
+    main: ['./src/scripts/index.js', './src/styles/main.scss'],
   },
   output: {
     filename: '[name].[hash].js',
@@ -27,8 +27,20 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+        test: /\.s?[ac]ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.resolve(__dirname, ''),
+              },
+            },
+          },
+          'sass-loader',
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -51,6 +63,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
 };
