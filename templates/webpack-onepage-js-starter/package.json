@@ -34,5 +34,8 @@
     "trailingComma": "es5",
     "singleQuote": true,
     "semi": true
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
   }
 }

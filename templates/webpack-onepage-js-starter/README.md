@@ -14,6 +14,15 @@ npm start
 http://localhost:8080/
 ```
 
+* starting points - these files are required:
+```
+/src/index.html         // template
+/src/styles/main.css    // main .css file
+/src/scripts/index.js   // main .js file
+
+```
+(rest of files and folders are optional)
+
 * modify only files in `/src` directory, webpack server will hot reload on every file change
 
 #### Production build:
@@ -24,8 +33,15 @@ npm run build
 * `/dist` directory with production-ready code will be added
 
 #### Tips:
-* `/src/index.html` - is a starting point
 * add images any any other sources to your index.html with `require()`:
 ```html
 <img src="${require('./assets/images/my-image.svg')}" alt="" />
+```
+* in .scss files URLs are always relative to `/src/styles/main.scss` file
+```scss
+/src/styles/base/_base.scss
+.class-name {
+  // these assets are always relative to main.scss file
+  background: url('../assets/images/my-image.svg');
+}
 ```

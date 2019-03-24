@@ -4,13 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
+const devMode = process.env.NODE_ENV !== 'production';
+
 module.exports = {
   entry: {
     main: ['./src/scripts/index.js', './src/styles/main.scss'],
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
   },
   module: {
     rules: [
@@ -27,9 +29,9 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.s?[ac]ss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           {
             loader: 'postcss-loader',
@@ -54,9 +56,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css',
-    }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,

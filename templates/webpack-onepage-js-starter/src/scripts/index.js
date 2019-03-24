@@ -1,9 +1,10 @@
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = 'From JS file';
+  element.innerHTML = 'This text is injected by JS file';
+  element.innerHTML = process.env.NODE_ENV.toString();
   element.classList.add('hello');
-  element.classList.add('normal');
+  element.classList.add('type');
 
   return element;
 }
