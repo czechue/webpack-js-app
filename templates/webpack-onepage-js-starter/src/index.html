@@ -4,20 +4,21 @@
     <title>Webpack One Page JS starter</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--webpack inject styles / don't modify-->
+    <!--webpack inject styles / don't modify this line-->
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
   </head>
   <body>
+
     <!--PLAYGROUND-->
     <header class="header__container">
-      <h1 class="heading--lg">Webpack 4 Vanilla Javascript Starter</h1>
+      <h1 class="heading--lg color-white">Webpack 4 Vanilla Javascript Starter</h1>
     </header>
     <main class="type">
-      <div>This text comes directly from index.html template</div>
+      <div class="type__medium padding__bottom-16">This text comes directly from index.html template</div>
       <img src="${require('./assets/images/my-image.svg')}" alt="" />
     </main>
 
-    <!--webpack inject script file / don't modify-->
+    <!--webpack inject script file / don't modify this line-->
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

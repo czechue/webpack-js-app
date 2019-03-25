@@ -1,3 +1,12 @@
+// custom Font useage example:
+@font-face {
+  font-family: 'Karla';
+  // these assets are relative to main.scss
+  src: url('../assets/fonts/karla.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
   font-family: $font-family-primary;
@@ -5,15 +14,6 @@ html {
 
 body {
   background-color: $color-grey-bg;
-}
-
-// custom Font usecase
-@font-face {
-  font-family: 'Karla';
-  // these assets are relative to main.scss
-  src: url('../assets/fonts/karla.ttf') format('ttf');
-  font-weight: 600;
-  font-style: normal;
 }
 
 .hello {

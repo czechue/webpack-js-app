@@ -18,6 +18,7 @@ babel
 prettier
 eslint
 postcss
+normalize.scss
 ```
 
 #### Dostępne opcje konfiguracyjne startera:

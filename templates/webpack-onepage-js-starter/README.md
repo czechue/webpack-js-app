@@ -45,3 +45,4 @@ npm run build
   background: url('../assets/images/my-image.svg');
 }
 ```
+* if you are using sugested styles/folder SCSS architecture, remember that after adding new _file.scss you should import it to main.scss file, and restart webpack dev server (`npm start`)
