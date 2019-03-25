@@ -8,5 +8,5 @@ function testTextComponent() {
   return element;
 }
 
-const div = document.querySelector('.center-js')
+const div = document.querySelector('.center-js');
 div.appendChild(testTextComponent());
