@@ -2,23 +2,46 @@
 <html>
   <head>
     <title>Webpack One Page JS starter</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--webpack inject styles / don't modify this line-->
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- webpack inject styles / don't modify this line -->
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+    />
   </head>
   <body>
 
-    <!--PLAYGROUND-->
-    <header class="header__container">
-      <h1 class="heading--lg color-white">Webpack 4 Vanilla Javascript Starter</h1>
+    <!-- PLAYGROUND -->
+    <header class="header__container center">
+      <h1 class="heading heading--lg color-white">
+        Webpack 4 Vanilla JavaScript Starter
+      </h1>
+      <h2 class="heading heading--md color-white">One Page Version</h2>
     </header>
-    <main class="type">
-      <div class="type__medium padding__bottom-16">This text comes directly from index.html template</div>
-      <img src="${require('./assets/images/my-image.svg')}" alt="" />
+    <main class="type container padding__bottom-16">
+      <section class="center center-js">
+        <img
+          class="random__image"
+          src="${require('./assets/images/webpack.svg')}"
+          alt=""
+        />
+        <div class="type__medium padding__bottom-16">
+          You can put text directly from the template like this
+        </div>
+      </section>
     </main>
 
-    <!--webpack inject script file / don't modify this line-->
+    <footer class="type container">
+      <div class="inline">
+        <a href="https://github.com/czechue/webpack-4-vanilla-js-starter"
+          >This project repo</a
+        >
+        <a class="padding__left-16" href="https://webpack.js.org/">Webpack</a>
+      </div>
+    </footer>
+
+    <!-- webpack inject script file / don't modify this line -->
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

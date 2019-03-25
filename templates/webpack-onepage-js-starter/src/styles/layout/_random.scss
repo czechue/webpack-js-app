@@ -1,0 +1,15 @@
+.random {
+  color: green;
+  background: url('../assets/images/my-image.svg');
+  background-repeat: no-repeat;
+  height: 100px;
+  min-width: 400px;
+  padding-top: 8px;
+  &--dude {
+    font-size: x-large;
+  }
+
+  &__image {
+    max-width: 400px;
+  }
+}

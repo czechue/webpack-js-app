@@ -23,6 +23,16 @@ $bp-desktop: 64em; // 1024px;
 $bp-wide: 105em; // 1680px;
 
 // FONTS
+$font-demo: 'Karla';
 $font-family-primary: 'Lato';
 $font-family-secondary: 'Anton';
 $default-font-size: 1.6rem;
+
+// custom Font usage example:
+@font-face {
+  font-family: $font-demo;
+  // these assets are relative to main.scss
+  src: url('../assets/fonts/karla.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}

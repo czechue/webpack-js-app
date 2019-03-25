@@ -1,13 +1,12 @@
 function testTextComponent() {
   const element = document.createElement('div');
 
-  element.innerHTML = 'This text is injected by JS file';
-  element.innerHTML = process.env.NODE_ENV.toString();
-  element.classList.add('hello');
-  element.classList.add('hello--man');
+  element.innerText = '... or even from the JavaScript like that';
+  element.classList.add('random');
+  element.classList.add('random--dude');
 
   return element;
 }
 
-
-document.body.appendChild(testTextComponent());
+const div = document.querySelector('.center-js')
+div.appendChild(testTextComponent());

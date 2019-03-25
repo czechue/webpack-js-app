@@ -1,27 +1,12 @@
-// custom Font useage example:
-@font-face {
-  font-family: 'Karla';
-  // these assets are relative to main.scss
-  src: url('../assets/fonts/karla.ttf') format('ttf');
-  font-weight: 600;
-  font-style: normal;
-}
-
 html {
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
-  font-family: $font-family-primary;
 }
 
 body {
   background-color: $color-grey-bg;
+  font-family: $font-demo, sans-serif;
 }
 
-.hello {
-  color: green;
-  font-family: 'Karla', sans-serif;
-  // these assets are relative to main.scss
-  background: url('../assets/images/my-image.svg');
-  &--man {
-    font-size: x-large;
-  }
+.container {
+  width: 100%;
 }
