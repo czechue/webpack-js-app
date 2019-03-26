@@ -1,0 +1,16 @@
+.heading {
+  font-family: $font-family-secondary;
+  margin: 8px 0;
+  &--lg {
+    font-size: 2.5rem;
+  }
+  &--md {
+    font-size: 2rem;
+  }
+}
+
+.type {
+  font-family: $font-family-primary;
+  font-size: 2rem;
+  color: $color-black;
+}

@@ -1,0 +1,38 @@
+// COLORS
+$color-black: #000000;
+$color-white: #ffffff;
+$color-grey-bg: #eeeeee;
+$color-grey-numbers: #d7d7d7;
+$color-grey-text: #9a999a;
+$color-grey-dark: #aaaaaa;
+$color-red: #eb3324;
+$color-yellow: #fad84a;
+
+// CUSTOM
+$color-primary: #448aff;
+$color-primary-light: #83b9ff;
+$color-primary-dark: #005ecb;
+$color-secondary: #ff5252;
+$color-secondary-light: #ff867f;
+$color-secondary-dark: #c50e29;
+
+// BREAKPOINTS
+$bp-small: 34.375em; // 550px;
+$bp-medium: 47.5em; // 760px;
+$bp-desktop: 64em; // 1024px;
+$bp-wide: 105em; // 1680px;
+
+// FONTS
+$font-demo: 'Karla';
+$font-family-primary: 'Lato';
+$font-family-secondary: 'Anton';
+$default-font-size: 1.6rem;
+
+// custom Font usage example:
+@font-face {
+  font-family: $font-demo;
+  // these assets are relative to main.scss
+  src: url('../assets/fonts/karla.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}

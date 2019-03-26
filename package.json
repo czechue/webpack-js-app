@@ -2,6 +2,7 @@
   "name": "webpack-vanilla-js-starter",
   "version": "1.0.0",
   "description": "",
+  "author": "Michal Lester",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
@@ -37,7 +38,6 @@
     "type": "git",
     "url": "git+https://github.com/czechue/webpack-4-vanilla-js-starter.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/czechue/webpack-4-vanilla-js-starter/issues"

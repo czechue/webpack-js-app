@@ -1,0 +1,13 @@
+// remove if you don't need Normalize.css
+@import 'abstracts/_normalize';
+
+// you can delete all these imports and files
+@import 'abstracts/_variables';
+@import 'abstracts/_mixins';
+@import 'abstracts/_utils';
+
+@import 'base/_base';
+@import 'base/_typography';
+
+@import 'layout/_header';
+@import 'layout/_random';
