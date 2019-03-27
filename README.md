@@ -12,17 +12,19 @@ doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację 
 Node 11.10+
 ```
 npm i -g webpack-vanilla-js-starter
+cd <projects>
 create-js-app
-> wybierz 
-
+  > choose boilerplate
+  > name a project
+  
+cd my-app
+npm install
 ```
 
 ## Development
 
-- `npm i -D webpack-js-starter`
-- `npm start` - developing on `http://localhost:8080`
-- `npm test` - runs tests
-- `npm run build` - bundling to prod
+- `npm start` - startuje środowisko dev na: `http://localhost:8080`
+- `npm run build` - buduje wersję produkcyjną
 
 ## Konfiguracje
 
@@ -94,6 +96,8 @@ create-js-app
 
 Webpack-spa-js-starter korzysta z następujących narzędzi:
 
+- Jest https://github.com/facebook/jest
+- DOM-Testing-Library https://github.com/kentcdodds/dom-testing-library
 - Puppeteer https://github.com/GoogleChrome/puppeteer
 - Jest-Pupeteer https://github.com/smooth-code/jest-puppeteer
 - Pixelmatch https://github.com/mapbox/pixelmatch
