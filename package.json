@@ -1,6 +1,6 @@
 {
-  "name": "webpack-vanilla-js-starter",
-  "version": "1.1.1",
+  "name": "create-js-app",
+  "version": "1.1.2",
   "description": "",
   "author": "Michal Lester",
   "main": "dist/index.js",
@@ -36,13 +36,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/czechue/webpack-4-vanilla-js-starter.git"
+    "url": "git+https://github.com/czechue/create-js-app.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/czechue/webpack-4-vanilla-js-starter/issues"
+    "url": "https://github.com/czechue/create-js-app/issues"
   },
-  "homepage": "https://github.com/czechue/webpack-4-vanilla-js-starter#readme",
+  "homepage": "https://github.com/czechue/create-js-app#readme",
   "devDependencies": {
     "@types/inquirer": "0.0.44",
     "@types/node": "^11.11.3",

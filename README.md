@@ -1,4 +1,4 @@
-## Webpack 4 (4.29.6) Vanilla Javascript Starter Pack
+## Create JS App - webpack 4 (4.29.6) based
 
 Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji
 ze skonfigurowanymi środowiskami `dev, test, pros`.
