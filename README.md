@@ -8,7 +8,14 @@ Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących
 doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację webpacka.
 
 ## Instalacja:
-TBD.
+
+Node 11.10+
+```
+npm i -g webpack-vanilla-js-starter
+create-js-app
+> wybierz 
+
+```
 
 ## Development
 

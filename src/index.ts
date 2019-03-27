@@ -2,50 +2,38 @@
 
 import chalk from 'chalk';
 import * as fs from 'fs';
-import * as inquirer from 'inquirer';
+import {prompt, Question} from 'inquirer';
 import * as path from 'path';
 
 const CHOICES = fs.readdirSync(path.join(__dirname, '../templates'));
 
-const QUESTIONS = [
-  {
-    name: 'template',
-    type: 'list',
-    message: 'What project template would you like to generate?',
-    choices: CHOICES,
-  },
-  {
-    name: 'name',
-    type: 'input',
-    message: 'Project name:',
-  },
-];
-
-export interface Answer {
-  name: string;
+export interface Answers {
   template: string;
+  name: string;
 }
 
-export interface CliOptions {
-  projectName: string;
-  templateName: string;
-  templatePath: string;
-  targetPath: string;
-}
+const templateQuestion: Question<Answers> = {
+  name: 'template',
+  type: 'list',
+  message: 'Choice template to install:',
+  choices: CHOICES,
+};
+
+const nameQuestion: Question<Answers> = {
+  name: 'name',
+  type: 'input',
+  message: 'Project name:',
+};
+
+export const CliQuestions: ReadonlyArray<Question<Answers>> = [templateQuestion, nameQuestion];
 
 const CURR_DIR = process.cwd();
 
-inquirer.prompt(QUESTIONS).then((answers: inquirer.Answers) => {
+prompt(CliQuestions).then((answers: Answers) => {
   const projectChoice = answers.template;
   const projectName = answers.name;
   const templatePath = path.join(__dirname, '../templates', projectChoice);
   const targetPath = path.join(CURR_DIR, projectName);
-  const options: CliOptions = {
-    projectName,
-    templateName: projectChoice,
-    templatePath,
-    targetPath,
-  };
 
   if (!createProject(targetPath)) {
     return;
@@ -63,20 +51,16 @@ const createProject = (projectPath: string) => {
   return true;
 };
 
-const SKIP_FILES = ['node_modules', '.template.json'];
-export interface TemplateConfig {
-  files?: string[];
-  postMessage?: string;
-}
+const SKIP_FILES = ['node_modules'];
 const createDirectoryContents = (templatePath: string, projectName: string) => {
   // read all files/folders (1 level) from template folder
   const filesToCreate = fs.readdirSync(templatePath);
 
-  // loog each file/folder
+  // loop each file/folder
   filesToCreate.forEach(file => {
     const origFilePath = path.join(templatePath, file);
 
-    // get stats about the current fike
+    // get stats about the current file
     const stats = fs.statSync(origFilePath);
 
     // skip files that should not be copied

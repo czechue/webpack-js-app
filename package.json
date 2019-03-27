@@ -10,7 +10,7 @@
     "test": "tests"
   },
   "bin": {
-    "wjs": "./dist/index.js"
+    "create-js-app": "./dist/index.js"
   },
   "scripts": {
     "start-ts": "ts-node src/index.ts",
