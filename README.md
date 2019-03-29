@@ -12,10 +12,9 @@ doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację 
 Node 11.10+
 ```
 npm i -g webpack-js-app
-cd <projects>
 webpack-js-app
-  > choose boilerplate
-  > name a project
+> ? What project template would you like to generate?
+> ? Project name: my-app
   
 cd my-app
 npm install
