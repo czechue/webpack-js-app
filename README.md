@@ -13,7 +13,7 @@ Node 11.10+
 ```
 npm i -g webpack-js-app
 cd <projects>
-create-js-app
+webpack-js-app
   > choose boilerplate
   > name a project
   
