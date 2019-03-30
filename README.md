@@ -61,6 +61,7 @@ npm install
 
 ```
 |-- package.json
+|-- .editorconfig
 |-- config
 |-- dist
 |-- src
