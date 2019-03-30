@@ -20,10 +20,6 @@ cd my-app
 npm install
 ```
 
-<p align="center">
-  <img width="600" src="https://asciinema.org/a/T8KveBQBmse232R37dUbdtwJo.svg">
-</p>
-
 
 ## Development
 
