@@ -1,7 +1,7 @@
 ## Webpack JS App - built with webpack 4 (4.29.6) javascript boilerplate
 
 Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji
-ze skonfigurowanymi środowiskami `dev, test, pros`.
+ze skonfigurowanymi środowiskami `dev, test(TBD), prod`.
 
 Idealny boilerplate do tworzenia prostych stron oraz aplikacji webowych w czystym JS.
 Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących, może być śmiało wykorzystywane przez bardziej
