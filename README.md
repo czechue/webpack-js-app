@@ -20,6 +20,8 @@ cd my-app
 npm install
 ```
 
+[![asciicast](https://asciinema.org/a/T8KveBQBmse232R37dUbdtwJo.svg)](https://asciinema.org/a/T8KveBQBmse232R37dUbdtwJo)
+
 ## Development
 
 - `npm start` - startuje środowisko dev na: `http://localhost:8080`
