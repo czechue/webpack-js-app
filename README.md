@@ -1,17 +1,10 @@
-## Webpack JS App
+## Webpack JS App Built with webpack 4 (4.29.6) JavaScript boilerplate
 
-<<<<<<< HEAD
-- Built with webpack 4 (4.29.6) JavaScript boilerplate
-- Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji
-  ze skonfigurowanymi środowiskami `dev, test, pros`.
-=======
 Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji
 ze skonfigurowanymi środowiskami `dev, test(TBD), prod`.
->>>>>>> 3dc21deadc803bb04fe83b9a923803386cf1c50d
 
-- Idealny boilerplate do tworzenia prostych stron oraz aplikacji webowych w czystym JS.
-  Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących, może być śmiało wykorzystywane przez bardziej
-  doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację webpacka.
+Idealny boilerplate do tworzenia prostych stron oraz aplikacji webowych w czystym JS.
+Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących, może być śmiało wykorzystywane przez bardziej doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację webpacka.
 
 ## Instalacja:
 
@@ -19,23 +12,16 @@ Node 11.10+
 
 ```
 npm i -g webpack-js-app
-<<<<<<< HEAD
-cd <projects>
-create-js-app
-  > choose boilerplate
-  > name a project
-
-=======
 webpack-js-app
 > ? What project template would you like to generate?
 > ? Project name: my-app
-  
->>>>>>> 3dc21deadc803bb04fe83b9a923803386cf1c50d
+
 cd my-app
 npm install
 ```
-<p align="center">
-  <img width="600" src="./demo.svg">
+
+<p align="left">
+  <img width="800" src="./demo.svg">
 </p>
 
 ## Development
@@ -48,22 +34,6 @@ npm install
 ### Porównanie
 
 |                         | webpack-onepage-js-starter | webpack-spa-js-starter (TBD) |
-<<<<<<< HEAD
-| :---------------------- | :------------------------: | :--------------------------: |
-| Hot Module Replacement  |     :white_check_mark:     |      :white_check_mark:      |
-| Dev Environment         |     webpack-dev-server     |      webpack-dev-server      |
-| Basic prod minification |     :white_check_mark:     |      :white_check_mark:      |
-| CSS Preprocessor        |        Sass (scss)         |         Sass (scss)          |
-| Autoprefixer            |     :white_check_mark:     |      :white_check_mark:      |
-| Normalize.css           |     :white_check_mark:     |      :white_check_mark:      |
-| Html template           |     :white_check_mark:     |             :x:              |
-| Write code in JS        |     :white_check_mark:     |      :white_check_mark:      |
-| Unit Tests              |            :x:             |      :white_check_mark:      |
-| E2E Tests               |            :x:             |      :white_check_mark:      |
-| Eslint                  |            :x:             |      :white_check_mark:      |
-| Editorconfig            |     :white_check_mark:     |             :x:              | 
-| Prettier                |            :x:             |      :white_check_mark:      |
-=======
 | :---------------------- | :------------------------: | :--------------------: |
 | Hot Module Replacement  |     :white_check_mark:     |   :white_check_mark:   |
 | Dev Environment         |     webpack-dev-server     |   webpack-dev-server   |
@@ -77,7 +47,6 @@ npm install
 | E2E Tests               |            :x:             |   :white_check_mark:   |
 | Eslint                  |            :x:             |   :white_check_mark:   |
 | Prettier                |            :x:             |   :white_check_mark:   |
->>>>>>> 3dc21deadc803bb04fe83b9a923803386cf1c50d
 
 ### Webpack-onepage-js-starter
 
