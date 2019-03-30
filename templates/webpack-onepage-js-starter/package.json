@@ -1,41 +1,41 @@
 {
-  "name": "webpack-onepage-js-starter",
-  "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "private": true,
-  "scripts": {
-    "start": "webpack-dev-server --open --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.prod.js"
-  },
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "7.4.0",
-    "@babel/preset-env": "7.4.2",
-    "autoprefixer": "9.5.0",
-    "babel-loader": "8.0.5",
-    "clean-webpack-plugin": "2.0.1",
-    "css-loader": "2.1.1",
-    "cssnano": "4.1.10",
-    "file-loader": "3.0.1",
-    "html-webpack-plugin": "3.2.0",
-    "mini-css-extract-plugin": "0.5.0",
-    "node-sass": "4.11.0",
-    "postcss-loader": "3.0.0",
-    "prettier": "^1.16.4",
-    "sass-loader": "7.1.0",
-    "style-loader": "0.23.1",
-    "webpack": "4.29.6",
-    "webpack-cli": "3.3.0",
-    "webpack-dev-server": "3.2.1",
-    "webpack-merge": "4.2.1"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true,
-    "semi": true
-  },
-  "dependencies": {
-    "normalize-scss": "^7.0.1"
-  }
+    "name": "webpack-onepage-js-starter",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "private": true,
+    "scripts": {
+        "start": "webpack-dev-server --open --config config/webpack.dev.js",
+        "build": "webpack --config config/webpack.prod.js"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "7.4.0",
+        "@babel/preset-env": "7.4.2",
+        "autoprefixer": "9.5.0",
+        "babel-loader": "8.0.5",
+        "clean-webpack-plugin": "2.0.1",
+        "css-loader": "2.1.1",
+        "cssnano": "4.1.10",
+        "file-loader": "3.0.1",
+        "html-webpack-plugin": "3.2.0",
+        "mini-css-extract-plugin": "0.5.0",
+        "node-sass": "4.11.0",
+        "postcss-loader": "3.0.0",
+        "prettier": "^1.16.4",
+        "sass-loader": "7.1.0",
+        "style-loader": "0.23.1",
+        "webpack": "4.29.6",
+        "webpack-cli": "3.3.0",
+        "webpack-dev-server": "3.2.1",
+        "webpack-merge": "4.2.1"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "semi": true
+    },
+    "dependencies": {
+        "normalize-scss": "^7.0.1"
+    }
 }
