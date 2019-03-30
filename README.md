@@ -1,4 +1,4 @@
-## Webpack JS App Built with webpack 4 (4.29.6) JavaScript boilerplate
+## Webpack JS App - webpack 4 (4.29.6) JavaScript boilerplate
 
 Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji
 ze skonfigurowanymi środowiskami `dev, test(TBD), prod`.
