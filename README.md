@@ -20,7 +20,10 @@ cd my-app
 npm install
 ```
 
-[![asciicast](https://asciinema.org/a/T8KveBQBmse232R37dUbdtwJo.svg)](https://asciinema.org/a/T8KveBQBmse232R37dUbdtwJo)
+<p align="center">
+  <img width="600" src="https://asciinema.org/a/T8KveBQBmse232R37dUbdtwJo.svg">
+</p>
+
 
 ## Development
 
