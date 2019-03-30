@@ -21,7 +21,7 @@ npm install
 ```
 
 <p align="left">
-  <img width="800" src="./demo.svg">
+  <img width="800" src="https://rawcdn.githack.com/czechue/webpack-js-app/807f597bc3c5050565f6fafe762f5cdef70ed357/demo.svg">
 </p>
 
 ## Development
