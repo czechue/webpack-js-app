@@ -38,7 +38,7 @@ npm install
 | Autoprefixer            |     :white_check_mark:     |   :white_check_mark:   |
 | Normalize.css           |     :white_check_mark:     |   :white_check_mark:   |
 | Html template           |     :white_check_mark:     |          :x:           |
-| Write code in JS        |     :white_check_mark:     |   :white_check_mark:   |
+| Babel 7 compiled JS     |     :white_check_mark:     |   :white_check_mark:   |
 | Unit Tests              |            :x:             |   :white_check_mark:   |
 | E2E Tests               |            :x:             |   :white_check_mark:   |
 | Eslint                  |            :x:             |   :white_check_mark:   |
