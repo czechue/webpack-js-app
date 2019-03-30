@@ -101,3 +101,7 @@ Webpack-spa-js-starter korzysta z następujących narzędzi:
 - Puppeteer https://github.com/GoogleChrome/puppeteer
 - Jest-Pupeteer https://github.com/smooth-code/jest-puppeteer
 - Pixelmatch https://github.com/mapbox/pixelmatch
+
+## Przykłady (TBD)
+
+Przykłady wykorzystania znajdują się w katalogu `/examples`
