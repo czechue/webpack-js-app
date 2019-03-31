@@ -6,6 +6,8 @@ ze skonfigurowanymi środowiskami `dev, test(TBD), prod`.
 Idealny boilerplate do tworzenia prostych stron oraz aplikacji webowych w czystym JS.
 Narzędzie, pomimo iż z założenia przeznaczone głównie dla początkujących, może być śmiało wykorzystywane przez bardziej doświadczonych developerów, którzy nie mają czasu na ręczną konfigurację webpacka.
 
+Aktualnie dostępny jest jeden config: **webpack-onepage-js-starter**, prace nad **webpack-spa-js-starter** in progress.
+
 ## Instalacja:
 
 Node 11.10+
