@@ -41,6 +41,7 @@ npm install
 | Dev Environment         |     webpack-dev-server     |   webpack-dev-server   |
 | Basic prod minification |     :white_check_mark:     |   :white_check_mark:   |
 | CSS Preprocessor        |        Sass (scss)         |      Sass (scss)       |
+| CSS Modules             |            :x:             |   :white_check_mark:   |
 | Autoprefixer            |     :white_check_mark:     |   :white_check_mark:   |
 | Normalize.css           |     :white_check_mark:     |   :white_check_mark:   |
 | Html template           |     :white_check_mark:     |          :x:           |
