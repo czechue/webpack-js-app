@@ -1,6 +1,6 @@
-## Re
+## Recommendation
 
-It is highly recommended to use https://parceljs.org/ instead of this starter, because Parcel does the same and much more, much better :)
+It is highly recommended to use https://parceljs.org/ instead of this starter, because Parcel does the same and much more, much better, much easier :)
 
 ## Webpack JS App - webpack 4 (4.29.6) JavaScript boilerplate
 
