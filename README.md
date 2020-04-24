@@ -1,3 +1,7 @@
+## Re
+
+It is highly recommended to use https://parceljs.org/ instead of this starter, because Parcel does the same and much more, much better :)
+
 ## Webpack JS App - webpack 4 (4.29.6) JavaScript boilerplate
 
 Generator pozwala za pomocą jednej komendy npm wygenerować boilerplate aplikacji
