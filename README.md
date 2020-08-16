@@ -1,6 +1,6 @@
 ## Recommendation
 
-This project was created before the advent of the (Parcel)[https://parceljs.org] tool. If you need a bundler for small and medium projects - I strongly suggest using Parcel instead. :)
+This project was created before the advent of the [Parcel](https://parceljs.org) tool. If you need a bundler for small and medium projects - I strongly suggest using Parcel instead. :)
 
 ## Webpack JS App - webpack 4 (4.29.6) JavaScript boilerplate
 
